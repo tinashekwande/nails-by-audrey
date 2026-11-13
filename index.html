@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nails by Audrey | Luxury Nail Care, Gel Manicures &amp; Nail Art</title>
+    <meta name="description" content="Nails by Audrey offers refined, personalised nail care including classic manicures, gel overlays, BIAB builder gel, soft gel tips, pedicures, and bespoke nail art. Book your appointment via WhatsApp.">
+    <meta property="og:title" content="Nails by Audrey | Luxury Nail Care &amp; Artistry">
+    <meta property="og:description" content="Effortless elegance, crafted for your hands. Explore curated nail treatments and book your appointment with Audrey on WhatsApp.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&amp;w=1200&amp;auto=format&amp;fit=crop">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&amp;family=Playfair+Display:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-[#1C1C1C] antialiased selection:bg-[#F8DDE5] selection:text-[#1C1C1C]" style="font-family: 'Inter', sans-serif;">
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="fixed w-full top-0 z-50 bg-[#F8DDE5]/20 backdrop-blur-md border-b border-white/20 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-24">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" id="nav-logo" class="text-2xl tracking-tight text-white uppercase transition-colors duration-300" style="font-family: 'Playfair Display', serif;">
+                        Nails by Audrey
+                    </a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-8 flex items-center space-x-6 lg:space-x-10">
+                        <a href="#about" class="nav-link whitespace-nowrap text-sm font-light text-white/90 hover:text-[#F8DDE5] transition-colors duration-300 uppercase tracking-widest">About</a>
+                        <a href="#services" class="nav-link whitespace-nowrap text-sm font-light text-white/90 hover:text-[#F8DDE5] transition-colors duration-300 uppercase tracking-widest">Services</a>
+                        <a href="#gallery" class="nav-link whitespace-nowrap text-sm font-light text-white/90 hover:text-[#F8DDE5] transition-colors duration-300 uppercase tracking-widest">Gallery</a>
+                        <a href="#why-audrey" class="nav-link whitespace-nowrap text-sm font-light text-white/90 hover:text-[#F8DDE5] transition-colors duration-300 uppercase tracking-widest">Why Us</a>
+                        <a href="#contact" class="nav-link whitespace-nowrap text-sm font-light text-white/90 hover:text-[#F8DDE5] transition-colors duration-300 uppercase tracking-widest">Contact</a>
+                        <a href="https://wa.me/27614231037?text=Hi%20Audrey!%20I%27d%20love%20to%20book%20a%20nail%20appointment.%20Could%20you%20please%20share%20your%20available%20dates%20and%20services%3F" target="_blank" rel="noopener noreferrer" class="whitespace-nowrap inline-flex items-center justify-center px-6 py-3 text-xs font-medium text-[#1C1C1C] bg-[#F8DDE5] uppercase tracking-widest hover:bg-white transition-all duration-300">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false" class="text-white hover:text-[#F8DDE5] focus:outline-none transition-colors">
+                        <iconify-icon icon="solar:hamburger-menu-linear" class="text-3xl" style="stroke-width: 1.5;"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#FFF9FB]/95 backdrop-blur-md border-t border-[#F8DDE5]">
+            <div class="px-6 py-8 space-y-5 flex flex-col items-center text-center">
+                <a href="#about" class="mobile-nav-link text-sm font-light text-[#1C1C1C] hover:text-[#C9A96E] uppercase tracking-widest">About</a>
+                <a href="#services" class="mobile-nav-link text-sm font-light text-[#1C1C1C] hover:text-[#C9A96E] uppercase tracking-widest">Services</a>
+                <a href="#gallery" class="mobile-nav-link text-sm font-light text-[#1C1C1C] hover:text-[#C9A96E] uppercase tracking-widest">Gallery</a>
+                <a href="#why-audrey" class="mobile-nav-link text-sm font-light text-[#1C1C1C] hover:text-[#C9A96E] uppercase tracking-widest">Why Us</a>
+                <a href="#contact" class="mobile-nav-link text-sm font-light text-[#1C1C1C] hover:text-[#C9A96E] uppercase tracking-widest">Contact</a>
+                <a href="https://wa.me/27614231037?text=Hi%20Audrey!%20I%27d%20love%20to%20book%20a%20nail%20appointment.%20Could%20you%20please%20share%20your%20available%20dates%20and%20services%3F" target="_blank" rel="noopener noreferrer" class="w-full max-w-xs inline-flex items-center justify-center gap-2 px-6 py-4 text-xs font-medium text-[#1C1C1C] bg-[#F8DDE5] uppercase tracking-widest hover:bg-[#C9A96E] hover:text-white transition-all duration-300">
+                    <iconify-icon icon="mdi:whatsapp" class="text-base"></iconify-icon>
+                    Book an Appointment
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image & Soft Scrim -->
+        <div class="absolute inset-0 w-full h-full z-0">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&amp;w=2000&amp;auto=format&amp;fit=crop" alt="Soft feminine manicure with glossy finish" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0 bg-[#2C1B21]/40"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#2C1B21]/70 via-transparent to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto mt-20">
+            <p class="text-xs md:text-sm text-[#F8DDE5] font-light tracking-[0.25em] uppercase mb-4">
+                Bespoke Nail Care &amp; Artistry
+            </p>
+            <h1 class="text-5xl sm:text-6xl md:text-8xl tracking-tight text-white mb-6" style="font-family: 'Playfair Display', serif;">
+                Nails by Audrey
+            </h1>
+            <div class="w-24 h-[1px] bg-[#F8DDE5] mx-auto mb-8"></div>
+            <p class="text-base md:text-xl text-white/95 font-light tracking-wide max-w-2xl mx-auto mb-12 leading-relaxed">
+                Effortless elegance, crafted for your hands. Refined manicures, glossy gel finishes, and personalised nail artistry in a warm, welcoming space.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+                <a href="https://wa.me/27614231037?text=Hi%20Audrey!%20I%27d%20love%20to%20book%20a%20nail%20appointment.%20Could%20you%20please%20share%20your%20available%20dates%20and%20services%3F" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-10 py-5 text-xs md:text-sm font-medium text-[#1C1C1C] bg-[#F8DDE5] uppercase tracking-widest hover:bg-white transition-all duration-500 hover:scale-105">
+                    <iconify-icon icon="mdi:whatsapp" class="text-lg"></iconify-icon>
+                    Book an Appointment
+                </a>
+                <a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center px-10 py-5 text-xs md:text-sm font-normal text-white border border-[#F8DDE5]/80 uppercase tracking-widest hover:bg-[#F8DDE5] hover:text-[#1C1C1C] transition-all duration-500">
+                    Explore Services
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-bounce">
+            <a href="#about" aria-label="Scroll to About Audrey" class="text-white/80 hover:text-[#F8DDE5] transition-colors">
+                <iconify-icon icon="solar:arrow-down-linear" class="text-3xl" style="stroke-width: 1;"></iconify-icon>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Audrey Section -->
+    <section class="lg:py-32 bg-white pt-24 pb-24" id="about">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+                <div class="order-2 lg:order-1 relative">
+                    <div class="aspect-[3/4] overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Delicate nail care and polish application" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-in-out">
+                    </div>
+                    <!-- Decorative soft blush pink block -->
+                    <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-[#F8DDE5] -z-10"></div>
+                </div>
+                <div class="order-1 lg:order-2">
+                    <p class="text-xs font-medium text-[#C9A96E] uppercase tracking-[0.2em] mb-3">The Artist Behind the Brand</p>
+                    <h2 class="lg:text-5xl text-4xl text-[#1C1C1C] tracking-tight mb-6" style="font-family: 'Playfair Display', serif;">Meet Audrey</h2>
+                    <div class="w-16 h-[2px] bg-[#F8DDE5] mb-10"></div>
+                    <div class="space-y-6 text-[#1C1C1C]/75 font-light leading-relaxed text-base lg:text-lg">
+                        <p>
+                            Nails by Audrey was born from a genuine love for thoughtful nail care and delicate artistry. Every appointment is designed to feel calm, unhurried, and completely tailored to you.
+                        </p>
+                        <p>
+                            With a keen eye for detail—from neat cuticle prep and balanced shaping to smooth, long-lasting gel finishes—Audrey believes beautiful nails start with healthy natural nail care and uncompromised precision.
+                        </p>
+                        <p>
+                            Whether you love sheer minimalist nudes, timeless French tips, or soft feminine pink nail art, your visit is a personalised experience dedicated to leaving you feeling confident and pampered.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 lg:py-32 bg-[#F8DDE5]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <p class="text-xs font-medium text-[#1C1C1C]/70 uppercase tracking-[0.2em] mb-3">Curated Treatments</p>
+                <h2 class="text-4xl lg:text-5xl tracking-tight text-[#1C1C1C] mb-6" style="font-family: 'Playfair Display', serif;">Nail Services</h2>
+                <div class="w-16 h-[2px] bg-[#C9A96E] mx-auto mb-6"></div>
+                <p class="text-sm md:text-base text-[#1C1C1C]/75 font-light">
+                    Proposed service menu tailored for natural nail beauty, lasting gel wear, and bespoke artistry. All treatments and pricing can be customised and confirmed upon enquiry.
+                </p>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="flex flex-wrap items-center justify-center gap-3 mb-14" role="tablist" aria-label="Service categories">
+                <button type="button" data-filter="all" class="service-filter-btn px-5 py-2.5 text-xs uppercase tracking-widest bg-[#1C1C1C] text-white transition-all duration-300">All Services</button>
+                <button type="button" data-filter="manicures" class="service-filter-btn px-5 py-2.5 text-xs uppercase tracking-widest bg-white text-[#1C1C1C] hover:bg-[#FDF2F6] transition-all duration-300">Manicures</button>
+                <button type="button" data-filter="gel" class="service-filter-btn px-5 py-2.5 text-xs uppercase tracking-widest bg-white text-[#1C1C1C] hover:bg-[#FDF2F6] transition-all duration-300">Gel &amp; BIAB</button>
+                <button type="button" data-filter="pedicures" class="service-filter-btn px-5 py-2.5 text-xs uppercase tracking-widest bg-white text-[#1C1C1C] hover:bg-[#FDF2F6] transition-all duration-300">Pedicures</button>
+                <button type="button" data-filter="art" class="service-filter-btn px-5 py-2.5 text-xs uppercase tracking-widest bg-white text-[#1C1C1C] hover:bg-[#FDF2F6] transition-all duration-300">Nail Art &amp; Care</button>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="services-grid">
+                <!-- Service 1 -->
+                <article data-category="manicures" class="service-card group bg-white hover:bg-[#FFF9FB] transition-all duration-500 flex flex-col overflow-hidden border border-transparent hover:border-[#C9A96E]/40">
+                    <div class="aspect-[16/10] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1572743686183-729b40b9230e?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Classic Manicure with natural polish" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 lg:p-10 flex flex-col flex-grow items-start">
+                        <div class="flex items-center justify-between w-full mb-4">
+                            <span class="text-[11px] uppercase tracking-[0.2em] text-[#C9A96E] font-medium">Manicures</span>
+                            <iconify-icon icon="solar:hand-stars-linear" class="text-2xl text-[#C9A96E]" style="stroke-width: 1.5;"></iconify-icon>
+                        </div>
+                        <h3 class="text-xl tracking-tight text-[#1C1C1C] mb-3" style="font-family: 'Playfair Display', serif;">Classic Manicure</h3>
+                        <p class="text-sm text-[#1C1C1C]/70 font-light leading-relaxed mb-6 flex-grow">
+                            Precision nail shaping, gentle cuticle care, a nourishing hand massage, and your choice of classic polish or a clean natural buff.
+                        </p>
+                        <div class="w-full pt-5 border-t border-[#F8DDE5] flex items-center justify-between gap-4">
+                            <span class="text-xs uppercase tracking-wider text-[#1C1C1C]/60">Price on enquiry</span>
+                            <a href="https://wa.me/27614231037?text=Hi%20Audrey!%20I%27d%20love%20to%20book%20a%20Classic%20Manicure.%20Could%20you%20please%20share%20your%20availability%20and%20pricing%3F" target="_blank" rel="noopener noreferrer" class="text-xs font-medium uppercase tracking-widest text-[#1C1C1C] hover:text-[#C9A96E] transition-colors inline-flex items-center gap-1.5">
+                                Book <iconify-icon icon="solar:arrow-right-linear" class="text-sm"></iconify-icon>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Service 2 -->
+                <article data-category="gel" class="service-card group bg-white hover:bg-[#FFF9FB] transition-all duration-500 flex flex-col overflow-hidden border border-transparent hover:border-[#C9A96E]/40">
+                    <div class="aspect-[16/10] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Glossy gel overlay manicure" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 lg:p-10 flex flex-col flex-grow items-start">
+                        <div class="flex items-center justify-between w-full mb-4">
+                            <span class="text-[11px] uppercase tracking-[0.2em] text-[#C9A96E] font-medium">Gel &amp; BIAB</span>
+                            <iconify-icon icon="solar:magic-stick-3-linear" class="text-2xl text-[#C9A96E]" style="stroke-width: 1.5;"></iconify-icon>
+                        </div>
+                        <h3 class="text-xl tracking-tight text-[#1C1C1C] mb-3" style="font-family: 'Playfair Display', serif;">Gel Overlay (Hands)</h3>
+                        <p class="text-sm text-[#1C1C1C]/70 font-light leading-relaxed mb-6 flex-grow">
+                            Long-lasting, chip-resistant gel polish over natural nails—with an optional flexible rubber base for extra durability and mirror-like shine.
+                        </p>
+                        <div class="w-full pt-5 border-t border-[#F8DDE5] flex items-center justify-between gap-4">
+                            <span class="text-xs uppercase tracking-wider text-[#1C1C1C]/60">Price on enquiry</span>
+                            <a href="https://wa.me/27614231037?text=Hi%20Audrey!%20I%27d%20love%20to%20book%20a%20Gel%20Overlay%20for%20Hands.%20Could%20you%20please%20share%20your%20availability%20and%20pricing%3F" target="_blank" rel="noopener noreferrer" class="text-xs font-medium uppercase tracking-widest text-[#1C1C1C] hover:text-[#C9A96E] transition-colors inline-flex items-center gap-1.5">
+                                Book <iconify-icon icon="solar:arrow-right-linear" class="text-sm"></iconify-icon>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Service 3 -->
+                <article data-category="gel" class="service-card group bg-white hover:bg-[#FFF9FB] transition-all duration-500 flex flex-col overflow-hidden border border-transparent hover:border-[#C9A96E]/40">
+                    <div class="aspect-[16/10] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="BIAB builder gel natural nail strengthening" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 lg:p-10 flex flex-col flex-grow items-start">
+                        <div class="flex items-center justify-between w-full mb-4">
+                            <span class="text-[11px] uppercase tracking-[0.2em] text-[#C9A96E] font-medium">Gel &amp; BIAB</span>
+                            <iconify-icon icon="solar:shield-check-linear" class="text-2xl text-[#C9A96E]" style="stroke-width: 1.5;"></iconify-icon>
+                        </div>
+                        <h3 class="text-xl tracking-tight text-[#1C1C1C] mb-3" style="font-family: 'Playfair Display', serif;">BIAB Builder Gel</h3>
+                        <p class="text-sm text-[#1C1C1C]/70 font-light leading-relaxed mb-6 flex-grow">
+                            Builder In A Bottle strengthening overlay designed to reinforce thin or brittle nails and support healthy, elegant natural nail growth.
+                        </p>
+                        <div class="w-full pt-5 border-t border-[#F8DDE5] flex items-center justify-between gap-4">
+                            <span class="text-xs uppercase tracking-wider text-[#1C1C1C]/60">Price on enquiry</span>
+                            <a href="https://wa.me/27614231037?text=Hi%20Audrey!%20I%27d%20love%20to%20book%20a%20BIAB%20Builder%20Gel%20treatment.%20Could%20you%20please%20share%20your%20availability%20and%20pricing%3F" target="_blank" rel="noopener noreferrer" class="text-xs font-medium uppercase tracking-widest text-[#1C1C1C] hover:text-[#C9A96E] transition-colors inline-flex items-center gap-1.5">
+                                Book <iconify-icon icon="solar:arrow-right-linear" class="text-sm"></iconify-icon>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Service 4 -->
+                <article data-category="gel" class="service-card group bg-white hover:bg-[#FFF9FB] transition-all duration-500 flex flex-col overflow-hidden border border-transparent hover:border-[#C9A96E]/40">
+                    <div class="aspect-[16/10] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1571290274554-6a2eaa771e5f?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Soft gel tips nail extensions" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 lg:p-10 flex flex-col flex-grow items-start">
+                        <div class="flex items-center justify-between w-full mb-4">
+                            <span class="text-[11px] uppercase tracking-[0.2em] text-[#C9A96E] font-medium">Gel &amp; BIAB</span>
+                            <iconify-icon icon="solar:stars-minimalistic-linear" class="text-2xl text-[#C9A96E]" style="stroke-width: 1.5;"></iconify-icon>
+                        </div>
+                        <h3 class="text-xl tracking-tight text-[#1C1C1C] mb-3" style="font-family: 'Playfair Display', serif;">Soft Gel Tips</h3>
+                        <p class="text-sm text-[#1C1C1C]/70 font-light leading-relaxed mb-6 flex-grow">
+                            Lightweight, flexible full-cover soft gel extensions tailored to your desired length and shape, finished in your favourite gel shade.
+                        </p>
+                        <div class="w-full pt-5 border-t border-[#F8DDE5] flex items-center justify-between gap-4">
+                            <span class="text-xs uppercase tracking-wider text-[#1C1C1C]/60">Price on enquiry</span>
+                            <a href="https://wa.me/27614231037?text=Hi%20Audrey!%20I%27d%20love%20to%20book%20Soft%20Gel%20Tips.%20Could%20you%20please%20share%20your%20availability%20and%20pricing%3F" target="_blank" rel="noopener noreferrer" class="text-xs font-medium uppercase tracking-widest text-[#1C1C1C] hover:text-[#C9A96E] transition-colors inline-flex items-center gap-1.5">
+                                Book <iconify-icon icon="solar:arrow-right-linear" class="text-sm"></iconify-icon>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Service 5 -->
+                <article data-category="pedicures" class="service-card group bg-white hover:bg-[#FFF9FB] transition-all duration-500 flex flex-col overflow-hidden border border-transparent hover:border-[#C9A96E]/40">
+                    <div class="aspect-[16/10] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&amp;w=800&amp;auto=format&amp;fit=crop" alt="Relaxing luxury pedicure care" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 lg:p-10 flex flex-col flex-grow items-start">
+                        <div class="flex items-center justify-between w-full mb-4">
+                            <span class="text-[11px] uppercase tracking-[0.2em] text-[#C9A96E] font-medium">Pedicures</span>
+                            <iconify-icon icon="solar:moon-stars-linear" class="text-2xl text-[#C9A96E]" style="stroke-width: 1.5;"></iconify-icon>
+                        </div>
+                        <h3 class="text-xl tracking-tight text-[#1C1C1C] mb-3" style="font-family: 'Playfair Display', serif;">Luxury Gel Pedicure</h3>
+                        <p class="text-sm text-[#1C1C1C]/70 font-light leading-relaxed mb-6 flex-grow">
+                            A restorative foot soak, gentle exfoliation, cuticle tidy, hydrating massage, and long-wearing gel colour for soft, polished toes.
+                        </p>
+                        <div class="w-full pt-5 border-t border-[#F8DDE5] flex items-center justify-between gap-4">
+                            <span class="text-xs uppercase tracking-wider text-[#1C1C1C]/60">Price on enquiry</span>
+                            <a href="https://wa.me/27614231037?text=Hi%20Audrey!%20I%27d%20love%20to%20book%20a%20Luxury%20Gel%20Pedicure.%20Could%20you%20please%20share%20your%20availability%20and%20pricing%3F" target="_blank" rel="noopener noreferrer" class="text-xs font-medium uppercase tracking-widest text-[#1C1C1C] hover:text-[#C9A96E] transition-colors inline-flex items-center gap-1.5">
+                                Book <iconify-icon icon="solar:arrow-right-linear" class="text-sm"></iconify-icon>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Service 6 -->
+                <article data-category="art" class="service-card group bg-white hover:bg-[#FFF9FB] transition-all duration-500 flex flex-col overflow-hidden border border-transparent hover:border-[#C9A96E]/40">
+                    <div class="aspect-[16/10] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" alt="Bespoke nail art and French tips" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-8 lg:p-10 flex flex-col flex-grow items-start">
+                        <div class="flex items-center justify-between w-full mb-4">
+                            <span class="text-[11px] uppercase tracking-[0.2em] text-[#C9A96E] font-medium">Nail Art &amp; Care</span>
+                            <iconify-icon icon="solar:leaf-linear" class="text-2xl text-[#C9A96E]" style="stroke-width: 1.5;"></iconify-icon>
+                        </div>
+                        <h3 class="text-xl tracking-tight text-[#1C1C1C] mb-3" style="font-family: 'Playfair Display', serif;">Bespoke Nail Art &amp; Soak-Off</h3>
+                        <p class="text-sm text-[#1C1C1C]/70 font-light leading-relaxed mb-6 flex-grow">
+                            Delicate French tips, minimalist linework, sheer blush accents, or gentle gel soak-off &amp; conditioning to keep your natural nails thriving.
+                        </p>
+                        <div class="w-full pt-5 border-t border-[#F8DDE5] flex items-center justify-between gap-4">
+                            <span class="text-xs uppercase tracking-wider text-[#1C1C1C]/60">Price on enquiry</span>
+                            <a href="https://wa.me/27614231037?text=Hi%20Audrey!%20I%27d%20love%20to%20enquire%20about%20Nail%20Art%20or%20a%20Gel%20Soak-Off.%20Could%20you%20please%20share%20your%20availability%20and%20pricing%3F" target="_blank" rel="noopener noreferrer" class="text-xs font-medium uppercase tracking-widest text-[#1C1C1C] hover:text-[#C9A96E] transition-colors inline-flex items-center gap-1.5">
+                                Book <iconify-icon icon="solar:arrow-right-linear" class="text-sm"></iconify-icon>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / Portfolio Section -->
+    <section id="gallery" class="py-24 lg:py-32 bg-white w-full">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 mb-16 text-center">
+            <p class="text-xs font-medium text-[#C9A96E] uppercase tracking-[0.2em] mb-3">Style Inspiration</p>
+            <h2 class="text-4xl lg:text-5xl tracking-tight text-[#1C1C1C] mb-6" style="font-family: 'Playfair Display', serif;">Nail Gallery</h2>
+            <div class="w-16 h-[2px] bg-[#F8DDE5] mx-auto mb-6"></div>
+            <p class="text-sm text-[#1C1C1C]/65 font-light max-w-xl mx-auto">
+                Click any look below to preview the style. Curated inspiration imagery is displayed here until Audrey's own portfolio photographs are added.
+            </p>
+        </div>
+
+        <div class="w-full px-4 lg:px-8 max-w-[1600px] mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-4 auto-rows-[240px] lg:auto-rows-[340px]">
+                <!-- Photo 1 (Large) - Pink Nail Designs -->
+                <button type="button" data-title="Soft Pink Nail Designs" data-caption="Delicate blush-pink tones with a luminous, high-gloss gel finish." class="gallery-item col-span-2 row-span-2 overflow-hidden group relative text-left focus:outline-none focus:ring-2 focus:ring-[#F8DDE5]">
+                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" alt="Soft pink nail design inspiration" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#1C1C1C]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <span class="text-white text-sm tracking-widest uppercase font-light">Soft Pink Nail Designs</span>
+                    </div>
+                </button>
+                <!-- Photo 2 - Minimalist Nail Designs -->
+                <button type="button" data-title="Minimalist Nail Designs" data-caption="Clean, understated lines and sheer neutral bases for everyday elegance." class="gallery-item overflow-hidden group relative text-left focus:outline-none focus:ring-2 focus:ring-[#F8DDE5]">
+                    <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Minimalist nail design inspiration" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#1C1C1C]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
+                        <span class="text-white text-xs tracking-widest uppercase font-light">Minimalist Designs</span>
+                    </div>
+                </button>
+                <!-- Photo 3 - French Manicures -->
+                <button type="button" data-title="Classic French Manicures" data-caption="Crisp, timeless tips paired with a sheer rosy base." class="gallery-item overflow-hidden group relative text-left focus:outline-none focus:ring-2 focus:ring-[#F8DDE5]">
+                    <img src="https://images.unsplash.com/photo-1572743686183-729b40b9230e?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Classic French manicure inspiration" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#1C1C1C]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
+                        <span class="text-white text-xs tracking-widest uppercase font-light">French Manicures</span>
+                    </div>
+                </button>
+                <!-- Photo 4 (Tall) - Creative Nail Art -->
+                <button type="button" data-title="Creative Nail Art" data-caption="Bespoke accents, subtle shimmer, and feminine detailing." class="gallery-item row-span-2 overflow-hidden group relative text-left focus:outline-none focus:ring-2 focus:ring-[#F8DDE5]">
+                    <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Creative nail art inspiration" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#1C1C1C]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
+                        <span class="text-white text-xs tracking-widest uppercase font-light">Creative Nail Art</span>
+                    </div>
+                </button>
+                <!-- Photo 5 - Elegant Nude Nails -->
+                <button type="button" data-title="Elegant Nude Nails" data-caption="Warm cream and soft nude tones tailored to complement every skin tone." class="gallery-item overflow-hidden group relative text-left focus:outline-none focus:ring-2 focus:ring-[#F8DDE5]">
+                    <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Elegant nude nails inspiration" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#1C1C1C]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
+                        <span class="text-white text-xs tracking-widest uppercase font-light">Elegant Nude Nails</span>
+                    </div>
+                </button>
+                <!-- Photo 6 - Beautiful Gel Finishes -->
+                <button type="button" data-title="Glossy Gel Finishes" data-caption="Smooth, glass-like shine designed for lasting everyday wear." class="gallery-item col-span-2 lg:col-span-1 overflow-hidden group relative text-left focus:outline-none focus:ring-2 focus:ring-[#F8DDE5]">
+                    <img src="https://images.unsplash.com/photo-1571290274554-6a2eaa771e5f?q=80&amp;w=1000&amp;auto=format&amp;fit=crop" alt="Glossy gel nail finish inspiration" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#1C1C1C]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
+                        <span class="text-white text-xs tracking-widest uppercase font-light">Gel Finishes</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Nails by Audrey Section -->
+    <section id="why-audrey" class="py-24 lg:py-32 bg-[#FDF7F9] border-t border-[#F8DDE5]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <p class="text-xs font-medium text-[#C9A96E] uppercase tracking-[0.2em] mb-3">The Audrey Difference</p>
+                <h2 class="text-4xl lg:text-5xl tracking-tight text-[#1C1C1C] mb-6" style="font-family: 'Playfair Display', serif;">Why Choose Nails by Audrey?</h2>
+                <div class="w-16 h-[2px] bg-[#F8DDE5] mx-auto"></div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <div class="bg-white p-8 border border-[#F8DDE5] flex flex-col items-start">
+                    <iconify-icon icon="solar:eye-linear" class="text-3xl text-[#C9A96E] mb-5" style="stroke-width: 1.5;"></iconify-icon>
+                    <h3 class="text-lg text-[#1C1C1C] mb-3" style="font-family: 'Playfair Display', serif;">Attention to Detail</h3>
+                    <p class="text-sm text-[#1C1C1C]/70 font-light leading-relaxed">Clean prep, balanced shaping, and meticulous polish work on every single nail.</p>
+                </div>
+                <div class="bg-white p-8 border border-[#F8DDE5] flex flex-col items-start">
+                    <iconify-icon icon="solar:heart-linear" class="text-3xl text-[#C9A96E] mb-5" style="stroke-width: 1.5;"></iconify-icon>
+                    <h3 class="text-lg text-[#1C1C1C] mb-3" style="font-family: 'Playfair Display', serif;">Personalised Service</h3>
+                    <p class="text-sm text-[#1C1C1C]/70 font-light leading-relaxed">One-on-one consultations to match your nail goals, lifestyle, and aesthetic.</p>
+                </div>
+                <div class="bg-white p-8 border border-[#F8DDE5] flex flex-col items-start">
+                    <iconify-icon icon="solar:stars-linear" class="text-3xl text-[#C9A96E] mb-5" style="stroke-width: 1.5;"></iconify-icon>
+                    <h3 class="text-lg text-[#1C1C1C] mb-3" style="font-family: 'Playfair Display', serif;">Beautiful Finishes</h3>
+                    <p class="text-sm text-[#1C1C1C]/70 font-light leading-relaxed">Smooth, glossy gel and natural finishes crafted to look refined and last.</p>
+                </div>
+                <div class="bg-white p-8 border border-[#F8DDE5] flex flex-col items-start">
+                    <iconify-icon icon="solar:hand-heart-linear" class="text-3xl text-[#C9A96E] mb-5" style="stroke-width: 1.5;"></iconify-icon>
+                    <h3 class="text-lg text-[#1C1C1C] mb-3" style="font-family: 'Playfair Display', serif;">Quality Nail Care</h3>
+                    <p class="text-sm text-[#1C1C1C]/70 font-light leading-relaxed">Gentle techniques and careful soak-offs that prioritise your natural nails.</p>
+                </div>
+                <div class="bg-white p-8 border border-[#F8DDE5] flex flex-col items-start sm:col-span-2 lg:col-span-1">
+                    <iconify-icon icon="solar:cup-hot-linear" class="text-3xl text-[#C9A96E] mb-5" style="stroke-width: 1.5;"></iconify-icon>
+                    <h3 class="text-lg text-[#1C1C1C] mb-3" style="font-family: 'Playfair Display', serif;">Welcoming Experience</h3>
+                    <p class="text-sm text-[#1C1C1C]/70 font-light leading-relaxed">A soft, peaceful atmosphere where you can truly unwind and feel at ease.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section (Soft Blush Pink replacing dark grey) -->
+    <section id="booking" class="py-28 lg:py-32 bg-[#F8DDE5] text-center">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <p class="text-xs font-medium text-[#1C1C1C]/70 uppercase tracking-[0.25em] mb-4">Appointments</p>
+            <h2 class="text-4xl lg:text-6xl tracking-tight text-[#1C1C1C] mb-6" style="font-family: 'Playfair Display', serif;">Book Your Appointment</h2>
+            <div class="w-16 h-[2px] bg-[#C9A96E] mx-auto mb-8"></div>
+            <p class="text-base md:text-xl text-[#1C1C1C]/80 font-light mb-12 max-w-2xl mx-auto leading-relaxed">
+                Ready for fresh, gorgeous nails? Send Audrey a message on WhatsApp to check available dates, discuss your dream set, and reserve your spot.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <a href="https://wa.me/27614231037?text=Hi%20Audrey!%20I%27d%20love%20to%20book%20a%20nail%20appointment.%20Could%20you%20please%20share%20your%20available%20dates%20and%20services%3F" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-10 py-5 text-sm font-medium text-white bg-[#1C1C1C] uppercase tracking-widest hover:bg-[#C9A96E] hover:text-[#1C1C1C] transition-all duration-300">
+                    <iconify-icon icon="mdi:whatsapp" class="text-xl"></iconify-icon>
+                    Book via WhatsApp · +27 61 423 1037
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer & Contact -->
+    <footer id="contact" class="bg-white text-[#1C1C1C] pt-20 pb-10 border-t border-[#F8DDE5]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-8 mb-16 text-center md:text-left">
+
+                <!-- Brand -->
+                <div class="flex flex-col items-center md:items-start">
+                    <a href="#" class="text-3xl tracking-tight text-[#1C1C1C] uppercase mb-6 block" style="font-family: 'Playfair Display', serif;">
+                        Nails by Audrey
+                    </a>
+                    <p class="text-sm font-light leading-relaxed max-w-xs text-[#1C1C1C]/65 mb-6">
+                        Refined, feminine nail care and bespoke gel artistry designed to help you look and feel your best.
+                    </p>
+                    <a href="https://wa.me/27614231037?text=Hi%20Audrey!%20I%27d%20love%20to%20book%20a%20nail%20appointment.%20Could%20you%20please%20share%20your%20available%20dates%20and%20services%3F" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 text-xs font-medium uppercase tracking-widest bg-[#F8DDE5] text-[#1C1C1C] hover:bg-[#C9A96E] hover:text-white transition-colors duration-300">
+                        <iconify-icon icon="mdi:whatsapp" class="text-base"></iconify-icon>
+                        Book Now
+                    </a>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="text-[#1C1C1C] text-xs font-medium mb-6 uppercase tracking-widest">Contact</h4>
+                    <ul class="space-y-4 text-center md:text-left">
+                        <li class="flex items-start justify-center md:justify-start gap-3">
+                            <iconify-icon icon="solar:map-point-linear" class="text-xl text-[#C9A96E] mt-0.5" style="stroke-width: 1.5;"></iconify-icon>
+                            <span class="text-sm font-light text-[#1C1C1C]/70">Studio Location<br>Shared upon booking confirmation</span>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start gap-3">
+                            <iconify-icon icon="mdi:whatsapp" class="text-xl text-[#C9A96E]"></iconify-icon>
+                            <a href="https://wa.me/27614231037?text=Hi%20Audrey!%20I%27d%20love%20to%20book%20a%20nail%20appointment.%20Could%20you%20please%20share%20your%20available%20dates%20and%20services%3F" target="_blank" rel="noopener noreferrer" class="text-sm font-light text-[#1C1C1C]/75 hover:text-[#C9A96E] transition-colors">+27 61 423 1037 (WhatsApp)</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Socials -->
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="text-[#1C1C1C] text-xs font-medium mb-6 uppercase tracking-widest">Follow Along</h4>
+                    <div class="flex gap-4 justify-center md:justify-start mb-4">
+                        <a href="#contact" aria-label="Instagram profile coming soon" title="Instagram (Coming Soon)" class="w-12 h-12 border border-[#F8DDE5] flex items-center justify-center hover:bg-[#F8DDE5] text-[#1C1C1C] transition-all duration-300">
+                            <iconify-icon icon="mdi:instagram" class="text-xl"></iconify-icon>
+                        </a>
+                        <a href="#contact" aria-label="Facebook profile coming soon" title="Facebook (Coming Soon)" class="w-12 h-12 border border-[#F8DDE5] flex items-center justify-center hover:bg-[#F8DDE5] text-[#1C1C1C] transition-all duration-300">
+                            <iconify-icon icon="mdi:facebook" class="text-xl"></iconify-icon>
+                        </a>
+                    </div>
+                    <p class="text-xs font-light text-[#1C1C1C]/50">Social links coming soon</p>
+                </div>
+
+            </div>
+
+            <div class="pt-8 border-t border-[#F8DDE5] flex flex-col items-center justify-center gap-4">
+                <p class="text-xs font-light text-[#1C1C1C]/55 uppercase tracking-widest">
+                    &copy; 2026 Nails by Audrey. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal for Interactive Gallery -->
+    <div id="gallery-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-[#1C1C1C]/70 backdrop-blur-sm p-4" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="bg-white max-w-2xl w-full overflow-hidden shadow-2xl border border-[#F8DDE5] relative">
+            <button id="modal-close" type="button" aria-label="Close gallery preview" class="absolute top-4 right-4 z-10 w-10 h-10 bg-white/90 text-[#1C1C1C] flex items-center justify-center hover:bg-[#F8DDE5] transition-colors">
+                <iconify-icon icon="solar:close-circle-linear" class="text-2xl"></iconify-icon>
+            </button>
+            <div class="aspect-[4/3] w-full overflow-hidden bg-[#FDF7F9]">
+                <img id="modal-img" src="" alt="" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                    <h3 id="modal-title" class="text-2xl text-[#1C1C1C] mb-1" style="font-family: 'Playfair Display', serif;"></h3>
+                    <p id="modal-caption" class="text-sm text-[#1C1C1C]/70 font-light"></p>
+                </div>
+                <a id="modal-wa" href="https://wa.me/27614231037" target="_blank" rel="noopener noreferrer" class="shrink-0 inline-flex items-center justify-center gap-2 px-6 py-3.5 text-xs font-medium uppercase tracking-widest bg-[#F8DDE5] text-[#1C1C1C] hover:bg-[#C9A96E] hover:text-white transition-colors">
+                    <iconify-icon icon="mdi:whatsapp" class="text-base"></iconify-icon>
+                    Request Look
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to top button -->
+    <a href="#" aria-label="Back to top" class="fixed bottom-8 right-8 w-12 h-12 bg-[#F8DDE5] text-[#1C1C1C] border border-[#C9A96E]/30 flex items-center justify-center opacity-85 hover:opacity-100 hover:bg-[#C9A96E] hover:text-white hover:-translate-y-1 transition-all duration-300 z-40 shadow-lg">
+        <iconify-icon icon="solar:alt-arrow-up-linear" class="text-2xl" style="stroke-width: 1.5;"></iconify-icon>
+    </a>
+
+    <script>
+        // Navbar scroll contrast state
+        const nav = document.getElementById('main-nav');
+        const navLogo = document.getElementById('nav-logo');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+
+        function updateNavOnScroll() {
+            if (window.scrollY > 60) {
+                nav.classList.remove('bg-[#F8DDE5]/20', 'border-white/20');
+                nav.classList.add('bg-white/95', 'border-[#F8DDE5]', 'shadow-sm');
+                navLogo.classList.remove('text-white');
+                navLogo.classList.add('text-[#1C1C1C]');
+                mobileBtn.classList.remove('text-white');
+                mobileBtn.classList.add('text-[#1C1C1C]');
+                navLinks.forEach(link => {
+                    link.classList.remove('text-white/90', 'hover:text-[#F8DDE5]');
+                    link.classList.add('text-[#1C1C1C]/80', 'hover:text-[#C9A96E]');
+                });
+            } else {
+                nav.classList.add('bg-[#F8DDE5]/20', 'border-white/20');
+                nav.classList.remove('bg-white/95', 'border-[#F8DDE5]', 'shadow-sm');
+                navLogo.classList.add('text-white');
+                navLogo.classList.remove('text-[#1C1C1C]');
+                mobileBtn.classList.add('text-white');
+                mobileBtn.classList.remove('text-[#1C1C1C]');
+                navLinks.forEach(link => {
+                    link.classList.add('text-white/90', 'hover:text-[#F8DDE5]');
+                    link.classList.remove('text-[#1C1C1C]/80', 'hover:text-[#C9A96E]');
+                });
+            }
+        }
+        window.addEventListener('scroll', updateNavOnScroll, { passive: true });
+        updateNavOnScroll();
+
+        // Mobile menu toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.toggle('hidden');
+            mobileBtn.setAttribute('aria-expanded', String(!isHidden));
+        });
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileBtn.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Service category filter
+        const filterButtons = document.querySelectorAll('.service-filter-btn');
+        const serviceCards = document.querySelectorAll('.service-card');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.dataset.filter;
+                filterButtons.forEach(b => {
+                    b.classList.remove('bg-[#1C1C1C]', 'text-white');
+                    b.classList.add('bg-white', 'text-[#1C1C1C]');
+                });
+                btn.classList.add('bg-[#1C1C1C]', 'text-white');
+                btn.classList.remove('bg-white', 'text-[#1C1C1C]');
+
+                serviceCards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // Interactive gallery lightbox
+        const modal = document.getElementById('gallery-modal');
+        const modalImg = document.getElementById('modal-img');
+        const modalTitle = document.getElementById('modal-title');
+        const modalCaption = document.getElementById('modal-caption');
+        const modalWa = document.getElementById('modal-wa');
+        const modalClose = document.getElementById('modal-close');
+
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('img');
+                const title = item.dataset.title || 'Nail Inspiration';
+                const caption = item.dataset.caption || '';
+                modalImg.src = img.src;
+                modalImg.alt = img.alt;
+                modalTitle.textContent = title;
+                modalCaption.textContent = caption;
+                const msg = encodeURIComponent(`Hi Audrey! I'd love to book a nail appointment inspired by "${title}". Could you please share your available dates and services?`);
+                modalWa.href = `https://wa.me/27614231037?text=${msg}`;
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                document.body.classList.add('overflow-hidden');
+            });
+        });
+
+        function closeModal() {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.classList.remove('overflow-hidden');
+        }
+        modalClose.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !modal.classList.contains('hidden')) closeModal();
+        });
+    </script>
+</body>
+</html>
